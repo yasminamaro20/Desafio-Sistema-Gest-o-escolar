@@ -17,10 +17,10 @@ O **Sistema Escolar PHP** é uma aplicação web desenvolvida para gerenciar dad
 
 ## Estrutura do Projeto
 
-*├── index.php # Página de login*
-*├── dashboard.php # Página inicial do sistema (após login)*
-*├── logout.php # Script para encerrar a sessão*
-*├── cadastro.php # Página de cadastro de usuários/alunos*
-*├── css/ # Arquivos de estilo*
-*├── js/ # Arquivos JavaScript (opcional)*
-*└── README.md # Documentação do projeto*
+**├── index.php # Página de login**
+**├── dashboard.php # Página inicial do sistema (após login)**
+**├── logout.php # Script para encerrar a sessão**
+**├── cadastro.php # Página de cadastro de usuários/alunos**
+**├── css/ # Arquivos de estilo**
+**├── js/ # Arquivos JavaScript (opcional)**
+**└── README.md # Documentação do projeto**
