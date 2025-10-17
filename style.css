@@ -1,0 +1,260 @@
+/* Passo 5: Estilos Coesos e Versionamento - Otimizado e Profissional */
+
+:root {
+    /* Paleta de Cores Corporativas */
+    --cor-primaria: #004a99; /* Azul Corporativo Profundo (Mais sério) */
+    --cor-secundaria: #5a6268; /* Cinza Metálico (Para detalhes e texto auxiliar) */
+    --cor-fundo: #f4f6f9; /* Fundo de Aplicação Suave (Off-white) */
+    --cor-clara: #ffffff;
+    --cor-escura: #212529; /* Texto Principal (Preto quase puro) */
+
+    /* Cores de Status - Mantendo o significado */
+    --cor-sucesso: #20c997; /* Verde Aqua (Mais moderno) */
+    --cor-alerta: #ffc107; /* Amarelo Padrão */
+    --cor-erro: #e83e8c; /* Vermelho-Rosa (Mais distinto e elegante) */
+
+    /* Geometria e Efeitos */
+    --raio-borda: 8px; /* Borda mais suave e moderna */
+    --sombra-elevacao: 0 6px 15px rgba(0, 0, 0, 0.15); /* Sombra mais difusa */
+    --sombra-leve: 0 2px 4px rgba(0, 0, 0, 0.08); /* Sombra para elementos menores */
+}
+
+/* Reset Padrão */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografia mais formal */
+}
+
+/* Estilos de Corpo Geral */
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--cor-primaria); /* Fundo com a cor principal */
+}
+
+.sistema-body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-escura);
+    line-height: 1.6; /* Melhor legibilidade */
+}
+
+/* --- Container de Login --- */
+.login-container {
+    background-color: var(--cor-clara);
+    padding: 50px; /* Mais espaçamento */
+    border-radius: var(--raio-borda);
+    box-shadow: var(--sombra-elevacao); /* Sombra destacada */
+    width: 100%;
+    max-width: 450px; /* Levemente maior */
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 25px;
+    color: var(--cor-escura); /* Título escuro para contraste */
+    font-weight: 300; /* Título mais leve */
+}
+
+.role-info {
+    font-size: 0.9em;
+    color: var(--cor-secundaria);
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+/* Formulário e Inputs */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600; /* Semibold */
+    color: var(--cor-escura);
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px; /* Mais padding */
+    border: 1px solid #dee2e6;
+    border-radius: var(--raio-borda);
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 0 0.2rem rgba(0, 74, 153, 0.25); /* Focus elegante */
+    outline: none;
+}
+
+button[type="submit"],
+.process-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--cor-primaria); /* Usando a cor primária para Ação Principal */
+    color: var(--cor-clara);
+    border: none;
+    border-radius: var(--raio-borda);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-transform: uppercase; /* Mais profissional */
+    letter-spacing: 0.5px;
+}
+
+button[type="submit"]:hover,
+.process-btn:hover {
+    background-color: #003c7a; /* Escurece a cor primária no hover */
+    box-shadow: var(--sombra-leve);
+}
+
+/* Mensagens de Erro */
+.erro-mensagem {
+    background-color: #fce4ec; /* Fundo mais suave para erro */
+    color: var(--cor-erro);
+    border: 1px solid var(--cor-erro);
+    padding: 15px;
+    border-radius: var(--raio-borda);
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* --- Estilos de Navegação e Layout --- */
+header {
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    padding: 18px 0; /* Mais padding vertical */
+    box-shadow: var(--sombra-leve);
+}
+
+.header-content {
+    max-width: 1300px; /* Largura maior */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px; /* Mais padding horizontal */
+}
+
+header a {
+    color: var(--cor-clara);
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 8px 15px;
+    border-radius: 4px; /* Borda menor para links */
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.15); /* Efeito de hover sutil */
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px 30px; /* Mais padding geral */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e9ecef; /* Linha divisória mais sutil */
+    margin: 40px 0;
+}
+
+/* Formulário de Turma (Admin) */
+.data-form h3 {
+    color: var(--cor-primaria);
+    margin-bottom: 25px;
+    border-bottom: 2px solid #dee2e6; /* Linha sutil para o título */
+    padding-bottom: 10px;
+}
+
+.form-turma input[type="text"],
+.form-turma input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: var(--raio-borda);
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+.aluno-fieldset {
+    border: 1px solid #e9ecef;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: var(--raio-borda);
+    background-color: var(--cor-clara);
+    box-shadow: var(--sombra-leve);
+}
+
+.aluno-fieldset legend {
+    font-weight: 600;
+    color: var(--cor-escura);
+    padding: 0 10px;
+    font-size: 1.1em;
+}
+
+.input-row {
+    display: inline-block;
+    width: calc(20% - 10px); 
+    margin-right: 12px;
+    margin-top: 15px;
+    vertical-align: top; /* Para alinhamento de inputs */
+}
+
+.input-row:last-child {
+    margin-right: 0;
+}
+
+.form-turma > button { 
+    width: auto;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: var(--cor-sucesso); /* Botão de ação secundária/confirmação */
+}
+
+.form-turma > button:hover {
+    background-color: #1aae85;
+}
+
+.process-btn {
+    width: auto;
+    background-color: var(--cor-secundaria); /* Botão de processo neutro */
+    padding: 10px 20px;
+}
+
+.process-btn:hover {
+    background-color: #495057;
+}
+
+/* --- Relatório e Tabela --- */
+.report-section {
+    margin-top: 50px;
+}
+
+.report-section h3 {
+    margin-bottom: 20px;
+    color: var(--cor-primaria);
+    font-weight: 500;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; /* Permite border-radius */
+    border-spacing: 0; /* Remove espaço entre bordas */
+    margin-bottom: 25px;
+}
